@@ -12,11 +12,13 @@
       justify-content: center;
       align-items: center;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow: hidden;
     }
 
-    @keyframes hoverDrop {
+    /* Slide-in animation */
+    @keyframes slideIn {
       0% {
-        transform: translateY(-50px);
+        transform: translateY(-100px);
         opacity: 0;
       }
       60% {
@@ -43,8 +45,9 @@
       text-shadow: 0 0 3px black;
       box-shadow: 0 0 20px #00ff64;
       transition: all 0.3s ease;
-      animation: hoverDrop 1s ease forwards;
       opacity: 0;
+      animation: slideIn 1s ease forwards;
+      animation-fill-mode: forwards;
     }
 
     .glass-button:hover {
@@ -64,7 +67,8 @@
     <p>RUMP AI assistant.</p>
     <p>  </p>
   <button class="glass-button" onclick="window.location.href='https://rumpai.vercel.app/rump'">
-    <img src="https://rbxcdn.vercel.app/rbxcdn/CDN/media/RUMP.png" alt="RUMP AI">
+    <img src="https://rbxcdn.vercel.app/rbxcdn/CDN/media/RUMP.png" alt="RUMP">
+    <p>CONTINUE</p>
   </button>
   </body>
 </html>
