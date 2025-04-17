@@ -1,2 +1,0 @@
-# RUMP
-RUMP AI assistant
