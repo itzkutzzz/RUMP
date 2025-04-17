@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8">
     <title>README.md - RUMP AI</title>
-  <style>
+   <style>
     body {
       margin: 0;
       height: 100vh;
@@ -26,6 +26,7 @@
       }
       100% {
         transform: translateY(0);
+        opacity: 1;
       }
     }
 
@@ -43,10 +44,10 @@
       cursor: pointer;
       text-shadow: 0 0 3px black;
       box-shadow: 0 0 20px #00ff64;
-      transition: all 0.3s ease;
-      opacity: 0;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       animation: slideIn 1s ease forwards;
       animation-fill-mode: forwards;
+      will-change: transform;
     }
 
     .glass-button:hover {
